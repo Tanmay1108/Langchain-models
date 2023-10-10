@@ -62,4 +62,9 @@ pip install faiss-cpu
 pip install tiktoken
 
 
+UML for the design - 
+
+![Langchain2](https://github.com/Tanmay1108/Langchain-models/assets/46091259/7bbbe978-1df4-470c-9cb1-8891d6a4fb33)
+
+
 
