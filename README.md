@@ -70,6 +70,30 @@ UML for the design -
 Document for observations - https://docs.google.com/document/d/1EgWAq3ySzN97KytKMOexndFF__XWxErW0PwQ3LxxRpk/edit
 
 
+Steps for running the code - 
+Downlaod the dependencies. 
+Then use these mappings to decide which Loader do you want to run
+Mappings - 
+```
+'py': ConcretePythonLoader,
+'py1': ConcreteUnstructuredFileLoader,
+'pdfminer': ConcretePDFPlumberFileLoader,
+'pdfplumber': ConcretePDFPlumberFileLoader,
+'pdfpymu':ConcretePyMuPDFFileLoader,
+'pypdf': ConcretePyPDFFileLoader,
+'pypdfium':ConcretePyPDFium2FileLoader,
+'matpixpdf':ConcreteMathpixPDFFileLoader, (is not supported, gives out error due to jq)
+'html': ConcreteUnstructuredHTMLFileLoader,
+'bs4html': ConcreteBSHTMLFileLoader,
+'pdf': ConcreteUnstructuredFileLoader,
+'json': ConcreteJSONFileLoader
+```
+
+Make the changes in the main function in lanchain_loader_client.py based on the file path and file_type, file type will include the keys from the above mappings and file path will include the relative path of the file you want to test. 
+Then run - 
+python lanchain_loader_client.py
+
+
 Observations - 
 PDF Observations - 
 PDFPlumber
