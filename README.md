@@ -77,7 +77,7 @@ Mappings -
 ```
 'py': ConcretePythonLoader,
 'py1': ConcreteUnstructuredFileLoader,
-'pdfminer': ConcretePDFPlumberFileLoader,
+'pdfminer': ConcretePDFMinerFileLoader,
 'pdfplumber': ConcretePDFPlumberFileLoader,
 'pdfpymu':ConcretePyMuPDFFileLoader,
 'pypdf': ConcretePyPDFFileLoader,
