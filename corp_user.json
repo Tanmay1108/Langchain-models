@@ -1,0 +1,16 @@
+{
+    "entity": "corp-user",
+    "data": [
+        {
+            "userName": {"firstName": "Super", "middleName": "test", "lastName": "test lastname"},
+            "phoneNumber": {"countryCode":"+91","number": "9999999990"},
+            "organizationId": "Fake Org id",
+            "corpEmail": "admin@delyvr.in"
+        },
+        {
+            "groupName": "TestGroupName",
+            "organizationId": "TestOrgId",
+            "description": "test description"
+        }
+    ]
+}
